@@ -1,0 +1,11 @@
+SAFELIST TAILWIND: 
+	purge: {
+		content: [
+			"./src/pages/**/*.{js,ts,jsx,tsx}",
+			"./src/components/**/*.{js,ts,jsx,tsx}",
+		],
+		safeList: [/^bg-/, /^to-/, /^from-/],
+	},
+
+	Quando eu tiver classes dinamicas, para a geração do build de produção preciso fazer uma safelist para que o tailwind carregue as classes
+	que eu estiver esperando como dinamicas
